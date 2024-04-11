@@ -15,6 +15,9 @@ public class Main {
         //  COMPONENT LOGIC  //
         ///////////////////////
 
+        b.addActionListener(e -> {
+            System.out.println("kek, boutoun clicked");
+        });
 
         //////////////////////////////
         //  ADD COMPONENTS TO FRAME //
@@ -25,7 +28,9 @@ public class Main {
         ////////////////////
         //  FRAME LAYOUT  //
         ////////////////////
-        f.setSize(600,400);
+        f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        f.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        f.setUndecorated(true);
         f.setLayout(null);
         f.setVisible(true);
 
